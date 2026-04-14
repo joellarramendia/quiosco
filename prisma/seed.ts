@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { categories } from "./data/categories";
 import { products } from "./data/products";
-import {prisma} from "@/src/generated/prisma/lib/prisma"
+import {prisma} from "@/src/lib/prisma"
 
 
 async function main() {
