@@ -12,7 +12,7 @@ export default function ImageUpload({ image }: { image: string | undefined }) {
             onSuccess={(result, { widget }) => {
                 if (result.event === 'success') {
                     widget.close()
-                    // @ts-ignore
+                    // @ts-expect-error: Cloudinary result type is missing secure_url in its base definition
                     setImageUrl(result.info?.secure_url)
                 }
             }}
